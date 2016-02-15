@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="707784848">
+    <data-source source="LOCAL" name="development" uuid="c3dbe3f9-ce5b-418f-89e0-376c01a8a122">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>SQLite</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\_Homework\US\CSC_517_Object_Oriented_Programing\project\class_portal_Pre-alpha\db\development.sqlite3</jdbc-url>
+    </data-source>
+  </component>
+</project>
