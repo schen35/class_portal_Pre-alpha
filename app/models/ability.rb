@@ -28,5 +28,19 @@ class Ability
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
+    user ||= User.new # guest user (not logged in)
+    if user.superadmin?
+      can :do_as_superadmin, User
+    else if user.admin?
+           can :do_as_admin, User
+         else if user.instructor?
+                can :do_as_instructor, User
+              else if user.student?
+                     can :do_as_student, User
+                   end
+              end
+         end
+    end
+
   end
 end
