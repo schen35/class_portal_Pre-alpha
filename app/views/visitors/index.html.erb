@@ -176,8 +176,13 @@
 
 
 <div class="container">
-
+  <hr>
     <hr>
+  <% if user_signed_in? %>
+      <p><h3>You have signed in successfully.</h3></p>
+  <% else %>
+      <p><h3>Dear visitor:</h3></p>
+  <% end %>
   <h1>Welcome to Class Protal!</h1>
     <!-- Footer -->
     <footer>
