@@ -18,6 +18,7 @@ class UsersController < ApplicationController
 
 
   def edit
+    @user = User.find(params[:id])
   end
 
   def create
@@ -35,6 +36,7 @@ class UsersController < ApplicationController
   end
 
   def update
+    @user = User.find(params[:id])
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'New user was successfully updated.' }
@@ -54,15 +56,18 @@ class UsersController < ApplicationController
     end
   end
 
+
+
   private
   # Use callbacks to share common setup or constraints between actions.
-  def set_administartator
+  def set_user
     @user = User.find(params[:id])
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
+  # Used for update user information
   def user_params
-    params[:user]
+    params.require(:user).permit(:email, :role, :name)
   end
 
 end
