@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'instructors/index'
+
+  get 'instructors/show'
+
  # get 'admins/index'
 
   get 'admins', to: 'admins#show'
@@ -21,5 +25,5 @@ Rails.application.routes.draw do
 
 
   resources :users
-
+  resources :instructors
 end
