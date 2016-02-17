@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'superadmin/index'
+
+  get 'superadmin/show'
+
+  get 'superadmin/edit'
+
+  get 'superadmin/new'
+
  # get 'admins/index'
 
   get 'admins', to: 'admins#show'
