@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
 #  get 'superadmins/index'
 
  # get 'superadmins/show'
@@ -10,6 +11,16 @@ Rails.application.routes.draw do
  # get 'admins/index'
 
 #  get 'admins', to: 'admins#show'
+=======
+
+ # get 'instructors/index'
+
+ # get 'instructors/show'
+
+ # get 'admins/index'
+
+ # get 'admins', to: 'admins#show'
+>>>>>>> origin/devarenacn
 
   #root to: 'users#index'
   root to: 'visitors#index'
@@ -27,7 +38,7 @@ Rails.application.routes.draw do
   end
 
 
-
+  resources :courses
   resources :users
   resources :admins
   resources :superadmins
