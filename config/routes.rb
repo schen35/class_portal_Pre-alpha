@@ -1,15 +1,11 @@
 Rails.application.routes.draw do
-#  get 'superadmins/index'
+  get 'instructors/index'
 
- # get 'superadmins/show'
-
- # get 'superadmins/new'
-#
- # get 'superadmins/edit'
+  get 'instructors/show'
 
  # get 'admins/index'
 
-#  get 'admins', to: 'admins#show'
+  get 'admins', to: 'admins#show'
 
   #root to: 'users#index'
   root to: 'visitors#index'
@@ -29,6 +25,5 @@ Rails.application.routes.draw do
 
 
   resources :users
-  resources :admins
-  resources :superadmins
+  resources :instructors
 end
