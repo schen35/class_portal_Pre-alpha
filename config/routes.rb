@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  get 'instructors/index'
 
-  get 'instructors/show'
+ # get 'instructors/index'
+
+ # get 'instructors/show'
 
  # get 'admins/index'
 
-  get 'admins', to: 'admins#show'
+ # get 'admins', to: 'admins#show'
 
   #root to: 'users#index'
   root to: 'visitors#index'
@@ -23,7 +24,7 @@ Rails.application.routes.draw do
   end
 
 
-
+  resources :courses
   resources :users
   resources :instructors
 end
