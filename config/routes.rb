@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 #  get 'superadmins/index'
 
  # get 'superadmins/show'
@@ -26,9 +28,10 @@ Rails.application.routes.draw do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
-
-
+  resources :enrollments
   resources :users
   resources :admins
   resources :superadmins
+
+
 end
