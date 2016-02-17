@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+ # get 'admins/index'
 
+  get 'admins', to: 'admins#show'
 
   #root to: 'users#index'
   root to: 'visitors#index'
   devise_for :users
+
 
 
 
