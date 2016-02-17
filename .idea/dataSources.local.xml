@@ -3,7 +3,14 @@
   <component name="dataSourceStorageLocal">
     <data-source name="Rails rails-devise: development" uuid="0f22b14e-21fd-48d9-b12c-e35090ed0668">
       <auth-required>false</auth-required>
-      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Sqlite (Xerial) - development.sqlite3" uuid="2143b9be-5f5a-4233-9d9f-731cf30623b2">
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="Sqlite (Xerial) - development.sqlite3 [2]" uuid="195a47ff-6634-42e0-ba41-929924176009">
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
     </data-source>
   </component>
 </project>
