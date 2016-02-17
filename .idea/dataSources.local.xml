@@ -3,7 +3,6 @@
   <component name="dataSourceStorageLocal">
     <data-source name="Rails rails-devise: development" uuid="0f22b14e-21fd-48d9-b12c-e35090ed0668">
       <auth-required>false</auth-required>
-      <first-sync>true</first-sync>
     </data-source>
   </component>
 </project>
