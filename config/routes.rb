@@ -1,6 +1,20 @@
 Rails.application.routes.draw do
-  root to: 'users#index'
+#  get 'superadmins/index'
+
+ # get 'superadmins/show'
+
+ # get 'superadmins/new'
+#
+ # get 'superadmins/edit'
+
+ # get 'admins/index'
+
+#  get 'admins', to: 'admins#show'
+
+  #root to: 'users#index'
+  root to: 'visitors#index'
   devise_for :users
+
 
 
 
@@ -15,4 +29,6 @@ Rails.application.routes.draw do
 
 
   resources :users
+  resources :admins
+  resources :superadmins
 end
