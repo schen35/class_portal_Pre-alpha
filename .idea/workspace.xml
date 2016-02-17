@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
     <list default="true" id="4d5b2fcc-7d18-49c9-9cdf-043355828ea6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/rails-devise.iml" afterPath="$PROJECT_DIR$/.idea/rails-devise.iml" />
@@ -15,9 +14,6 @@
 =======
     <list default="true" id="4d5b2fcc-7d18-49c9-9cdf-043355828ea6" name="Default" comment="" />
 >>>>>>> origin/devarenacn
-=======
-    <list default="true" id="4d5b2fcc-7d18-49c9-9cdf-043355828ea6" name="Default" comment="" />
->>>>>>> schen35
 =======
     <list default="true" id="4d5b2fcc-7d18-49c9-9cdf-043355828ea6" name="Default" comment="" />
 >>>>>>> schen35
@@ -192,13 +188,8 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
-            <state vertical-scroll-proportion="0.0">
-=======
->>>>>>> schen35
-=======
             <state vertical-scroll-proportion="0.0">
 =======
 >>>>>>> schen35
@@ -208,13 +199,8 @@
 =======
             <state vertical-scroll-proportion="0.0">
 <<<<<<< HEAD
-<<<<<<< HEAD
               <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
 >>>>>>> origin/devarenacn
-=======
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
->>>>>>> parent of 7b87d47... ~~last stable version~~
->>>>>>> schen35
 =======
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
 >>>>>>> parent of 7b87d47... ~~last stable version~~
@@ -230,14 +216,10 @@
             <state vertical-scroll-proportion="0.0">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
 =======
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
 >>>>>>> origin/devarenacn
-=======
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
->>>>>>> schen35
 =======
               <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
 >>>>>>> schen35
@@ -326,18 +308,12 @@
     <panes>
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="RailsProjectView" />
 =======
       <pane id="RailsProjectView" />
       <pane id="Scope" />
 >>>>>>> origin/devarenacn
-=======
-      <pane id="RailsProjectView" />
-=======
->>>>>>> parent of 7b87d47... ~~last stable version~~
->>>>>>> schen35
 =======
       <pane id="RailsProjectView" />
 =======
@@ -948,7 +924,6 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3131579" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
     <frame x="0" y="23" width="1280" height="730" extended-state="0" />
     <editor active="true" />
@@ -972,10 +947,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
 >>>>>>> origin/devarenacn
-=======
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26806834" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
->>>>>>> schen35
 =======
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26806834" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1014,7 +985,6 @@
           <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding />
@@ -1041,10 +1011,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
->>>>>>> schen35
           <folding />
->>>>>>> parent of d2826df... *rails driver bad things
         </state>
       </provider>
     </entry>
@@ -1110,14 +1077,10 @@
 =======
           <folding />
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
 >>>>>>> origin/devarenacn
-=======
->>>>>>> parent of d2826df... *rails driver bad things
->>>>>>> schen35
 =======
 >>>>>>> parent of d2826df... *rails driver bad things
 >>>>>>> schen35
@@ -1201,14 +1164,10 @@
 =======
           <folding />
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
         <state vertical-scroll-proportion="0.43360996">
           <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
 >>>>>>> origin/devarenacn
-=======
->>>>>>> parent of d2826df... *rails driver bad things
->>>>>>> schen35
 =======
 >>>>>>> parent of d2826df... *rails driver bad things
 >>>>>>> schen35
@@ -1242,14 +1201,10 @@
 =======
           <folding />
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
         <state vertical-scroll-proportion="-1.3571428">
           <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
 >>>>>>> origin/devarenacn
-=======
->>>>>>> parent of d2826df... *rails driver bad things
->>>>>>> schen35
 =======
 >>>>>>> parent of d2826df... *rails driver bad things
 >>>>>>> schen35
@@ -1293,14 +1248,10 @@
 =======
           <folding />
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
         <state vertical-scroll-proportion="-6.107143">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
 >>>>>>> origin/devarenacn
-=======
->>>>>>> parent of d2826df... *rails driver bad things
->>>>>>> schen35
 =======
 >>>>>>> parent of d2826df... *rails driver bad things
 >>>>>>> schen35
@@ -1330,13 +1281,9 @@
 =======
           <folding />
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
 >>>>>>> origin/devarenacn
-=======
->>>>>>> parent of d2826df... *rails driver bad things
->>>>>>> schen35
 =======
 >>>>>>> parent of d2826df... *rails driver bad things
 >>>>>>> schen35
@@ -1429,18 +1376,6 @@
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
-          <folding />
->>>>>>> parent of d2826df... *rails driver bad things
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
->>>>>>> schen35
           <folding />
 >>>>>>> parent of d2826df... *rails driver bad things
         </state>
@@ -1474,14 +1409,10 @@
 =======
           <folding />
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
         <state vertical-scroll-proportion="-3.392857">
           <caret line="5" column="129" selection-start-line="5" selection-start-column="129" selection-end-line="5" selection-end-column="129" />
 >>>>>>> origin/devarenacn
-=======
->>>>>>> parent of d2826df... *rails driver bad things
->>>>>>> schen35
 =======
 >>>>>>> parent of d2826df... *rails driver bad things
 >>>>>>> schen35
@@ -1495,11 +1426,6 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-          <folding />
->>>>>>> parent of d2826df... *rails driver bad things
->>>>>>> schen35
 =======
           <folding />
 >>>>>>> parent of d2826df... *rails driver bad things
@@ -1525,11 +1451,6 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-          <folding />
->>>>>>> parent of d2826df... *rails driver bad things
->>>>>>> schen35
 =======
           <folding />
 >>>>>>> parent of d2826df... *rails driver bad things
@@ -1546,13 +1467,9 @@
 =======
           <folding />
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
 >>>>>>> origin/devarenacn
-=======
->>>>>>> parent of d2826df... *rails driver bad things
->>>>>>> schen35
 =======
 >>>>>>> parent of d2826df... *rails driver bad things
 >>>>>>> schen35
@@ -1662,11 +1579,6 @@
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        <state vertical-scroll-proportion="0.0">
-=======
->>>>>>> schen35
 =======
         <state vertical-scroll-proportion="0.0">
 =======
@@ -1719,13 +1631,8 @@
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
-        <state vertical-scroll-proportion="0.40425533">
-=======
->>>>>>> schen35
-=======
         <state vertical-scroll-proportion="0.40425533">
 =======
 >>>>>>> schen35
@@ -1734,15 +1641,9 @@
           <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
         <state vertical-scroll-proportion="0.23076923">
           <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
 >>>>>>> origin/devarenacn
-=======
-        <state vertical-scroll-proportion="0.50109893">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
->>>>>>> parent of 7b87d47... ~~last stable version~~
->>>>>>> schen35
 =======
         <state vertical-scroll-proportion="0.50109893">
           <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
