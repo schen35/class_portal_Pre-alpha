@@ -15,7 +15,4 @@
     <% if can? :do_as_superadmin, :all %>
         <li><%= link_to "Do as superadmin", superadmins_path %></li>
     <% end %>
-    <% if can? :do_as_student, :all %>
-        <li><%= link_to "Enrollment", enrollments_path %></li>
-    <% end %>
 <% end %>
