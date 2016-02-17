@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new(add_user_params)
 
     respond_to do |format|
       if @user.save
@@ -68,6 +68,10 @@ class UsersController < ApplicationController
   # Used for update user information
   def user_params
     params.require(:user).permit(:email, :role, :name)
+  end
+
+  def add_user_params
+    params.require(:user).permit(:email, :name, :password, :role)
   end
 
 end
