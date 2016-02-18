@@ -24,3 +24,10 @@ module RailsDevise
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
+module Register
+  class Application < Rails::Application
+    config.course_ID = -1
+    config.student_ID = -1
+    config.instructor_ID = -1
+  end
+end

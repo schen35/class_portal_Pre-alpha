@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :enrollments
  # get 'instructors/index'
 
  # get 'instructors/show'
@@ -9,6 +10,9 @@ Rails.application.routes.draw do
  # get 'admins', to: 'admins#show'
 
   #root to: 'users#index'
+
+
+
   root to: 'visitors#index'
   devise_for :users
 

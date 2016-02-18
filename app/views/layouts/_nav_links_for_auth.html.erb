@@ -10,6 +10,11 @@
 <% end %>
 <% if user_signed_in? %>
     <% if can? :do_as_instructor, :all %>
-        <li><%= link_to "Do as instructor", courses_path %></li>
+        <li><%= link_to "Do as instructor", enrollments_path %></li>
+    <% end %>
+<% end %>
+<% if user_signed_in? %>
+    <% if can? :do_as_student, :all %>
+        <li><%= link_to "Do as student", courses_path %></li>
     <% end %>
 <% end %>
