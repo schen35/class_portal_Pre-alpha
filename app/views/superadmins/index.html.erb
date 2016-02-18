@@ -16,15 +16,16 @@
 
       <tbody>
       <% @users.each do |user| %>
+          <% if can? :destroy, user %>
+          <% end %>
           <tr>
             <td><%= user.email %></td>
             <td><%= user.name %></td>
             <td><%= user.role %></td>
 
             <!--<td><%= link_to 'Edit', edit_user_path(user) %></td>-->
-            <% if can? :destroy, @user %>
-            <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %>
-            <% end %>
+
+            <td><%= button_to 'Delete', user, :method => :delete, :class=>:destroy, data: { confirm: 'Are you sure?' } if can? :destroy, user %><</td>
           </tr>
       <% end %>
       </tbody>
