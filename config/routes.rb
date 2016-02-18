@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :admins
 #  get 'superadmins/index'
 
  # get 'superadmins/show'
@@ -36,11 +35,12 @@ Rails.application.routes.draw do
     get 'logout', to: "devise/sessions#destroy", as: "logout"
     get 'signout', to: "users/sessions#destroy", as: "signout"
     get 'signup', to: "users#new", as: "signup"
-    get '/users/sign_out' => 'devise/sessions#destroy'
+    get '/u/sign_out' => 'devise/sessions#destroy'
   end
 
-
+  resources :enrollments
   resources :courses
   resources :users
+  resources :admins
   resources :superadmins
 end
