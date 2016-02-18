@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="DataSourceManagerImpl" format="xml" hash="1296910522">
     <data-source source="LOCAL" name="Sqlite (Xerial) - development.sqlite3" uuid="f4d9be2d-0920-42d9-b6cc-333fc1155483">
+=======
+  <component name="DataSourceManagerImpl" format="xml" hash="602756671">
+    <data-source source="LOCAL" name="Rails rails-devise: development" uuid="0f22b14e-21fd-48d9-b12c-e35090ed0668">
+>>>>>>> refs/remotes/origin/devarenacn
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+<<<<<<< HEAD
+=======
+      <explain-plan-config>
+        <provider>com.intellij.database.plan.ExplainPlanProvider.NullExplainPlanProvider</provider>
+      </explain-plan-config>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/xerial-sqlite-license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/sqlite-jdbc-3.8.9.jar</url>
+        </library>
+      </libraries>
+>>>>>>> refs/remotes/origin/devarenacn
     </data-source>
   </component>
 </project>
