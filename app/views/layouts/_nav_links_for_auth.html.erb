@@ -10,7 +10,7 @@
 <% end %>
 <% if user_signed_in? %>
     <% if can? :do_as_admin, :all %>
-        <li><%= link_to "Do as admin", admins_path %></li>
+        <li><%= link_to "Do as admin", superadmins_path %></li>
     <% end %>
     <% if can? :do_as_instructor, :all %>
         <li><%= link_to "Do as instructor", enrollments_path %></li>
