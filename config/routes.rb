@@ -1,5 +1,18 @@
 Rails.application.routes.draw do
 
+#  get 'superadmins/index'
+
+ # get 'superadmins/show'
+
+ # get 'superadmins/new'
+#
+ # get 'superadmins/edit'
+
+ # get 'admins/index'
+
+#  get 'admins', to: 'admins#show'
+
+
  # get 'instructors/index'
 
  # get 'instructors/show'
@@ -8,9 +21,11 @@ Rails.application.routes.draw do
 
  # get 'admins', to: 'admins#show'
 
+
   #root to: 'users#index'
   root to: 'visitors#index'
-  devise_for :users
+  devise_for :users, :path =>'u'
+
 
 
 
@@ -26,5 +41,6 @@ Rails.application.routes.draw do
 
   resources :courses
   resources :users
-  resources :instructors
+  resources :admins
+  resources :superadmins
 end
