@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :admins
 #  get 'superadmins/index'
 
  # get 'superadmins/show'
@@ -41,6 +42,5 @@ Rails.application.routes.draw do
 
   resources :courses
   resources :users
-  resources :admins
   resources :superadmins
 end

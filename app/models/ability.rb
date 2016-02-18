@@ -35,5 +35,13 @@ class Ability
     can :do_as_instructor, :all if user.role == 'instructor'
     can :do_as_student, :all if user.role =='student'
 
+    if user.role == 'admin'
+    cannot :destroy, User, id: user.id
+    end
+    if user.role == 'superadmin'
+      cannot :destroy, User, id: user.id
+    end
+
   end
+
 end
