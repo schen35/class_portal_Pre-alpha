@@ -42,14 +42,10 @@
         <% end %>
         <% if can? :do_as_admin, :all %>
         <td><%= link_to 'Edit', edit_course_path(course) %></td>
-<<<<<<< HEAD
         <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' }%></td>
         <% end %>
             </tr>
-=======
-        <td><%= link_to 'Destroy', course, :method => :delete, :class=>:destroy, data: { confirm: 'Are you sure?' }%></td>
-      </tr>
->>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
+
     <% end %>
   </tbody>
 </table>
