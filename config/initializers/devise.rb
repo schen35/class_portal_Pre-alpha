@@ -14,7 +14,7 @@ Devise.setup do |config|
   # with default "from" parameter.
   # domain = Rails.application.secrets.domain_name
   # domain ||= 'example.com'
-  config.mailer_sender = 'no-reply@'
+  # config.mailer_sender = 'no-reply@'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
