@@ -13,19 +13,23 @@
 
 ActiveRecord::Schema.define(version: 20160217175957) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "courses", force: :cascade do |t|
     t.integer  "Course_num"
     t.string   "Title"
     t.text     "Description"
     t.string   "Instructor"
+    t.integer  "Instructor_ID"
     t.date     "Start_date"
     t.date     "End_date"
     t.boolean  "Status"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
-  add_index "courses", ["Course_num"], name: "index_courses_on_Course_num", unique: true
+  add_index "courses", ["Course_num"], name: "index_courses_on_Course_num", unique: true, using: :btree
 
   create_table "enrollments", force: :cascade do |t|
     t.integer  "Student_ID"
@@ -37,6 +41,10 @@ ActiveRecord::Schema.define(version: 20160217175957) do
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
+
+  add_index "enrollments", ["Course_ID"], name: "index_enrollments_on_Course_ID", using: :btree
+  add_index "enrollments", ["Instructor_ID"], name: "index_enrollments_on_Instructor_ID", using: :btree
+  add_index "enrollments", ["Student_ID"], name: "index_enrollments_on_Student_ID", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -55,7 +63,7 @@ ActiveRecord::Schema.define(version: 20160217175957) do
     t.integer  "role"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

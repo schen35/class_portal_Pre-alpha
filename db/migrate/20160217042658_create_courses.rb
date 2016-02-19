@@ -5,6 +5,7 @@ class CreateCourses < ActiveRecord::Migration
       t.string :Title
       t.text :Description
       t.string :Instructor
+      t.integer :Instructor_ID
       t.date :Start_date
       t.date :End_date
       t.boolean :Status
