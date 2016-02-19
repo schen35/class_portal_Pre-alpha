@@ -7,6 +7,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    session[:user_id] = @user.id
     unless @user == current_user
       redirect_to :back, :alert => "Access denied."
     end
@@ -19,11 +20,11 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
+    session[:user_id] = @user.id
   end
 
   def create
     @user = User.new(add_user_params)
-
     respond_to do |format|
       if @user.save
         format.html { redirect_to action: "index", notice:'New User has been successfully created!'}
@@ -37,6 +38,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
+    session[:user_id] = @user.id
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'New user was successfully updated.' }
@@ -57,13 +59,14 @@ class UsersController < ApplicationController
     end
   end
 
-
-
-  private
-  # Use callbacks to share common setup or constraints between actions.
   def set_user
     @user = User.find(params[:id])
+    session[:user_id] = @user.id
   end
+
+  private
+
+  # Use callbacks to share common setup or constraints between actions.
 
   # Never trust parameters from the scary internet, only allow the white list through.
   # Used for update user information

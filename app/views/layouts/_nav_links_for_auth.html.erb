@@ -9,6 +9,7 @@
   <li><%= link_to 'Users', users_path %></li>
 <% end %>
 <% if user_signed_in? %>
+
     <% if can? :do_as_admin, :all %>
         <li><%= link_to "Do as admin", superadmins_path %></li>
     <% end %>

@@ -10,5 +10,9 @@ class CreateEnrollments < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+
+    add_index :enrollments, :Student_ID
+    add_index :enrollments, :Instructor_ID
+    add_index :enrollments, :Course_ID
   end
 end

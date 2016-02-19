@@ -29,8 +29,8 @@
         <td><%= course.End_date %></td>
         <td><%= course.Status %></td>
         <% if can? :do_as_student, :all %>
-            <% Rails.application.config.course_ID = course.id %>
-            <td><%= button_to "Enroll", new_enrollment_path, form_class: "Enroll", method: "get"  %></td>
+            <% @course_id = course.id  %>
+            <td><%= button_to "Enroll", new_course_enrollment_path(@course_id),  form_class: "Enroll", method: "get"  %></td>
 
         <% end %>
         <td><%= link_to 'Show', course %></td>
