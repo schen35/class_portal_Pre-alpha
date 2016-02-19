@@ -1,4 +1,4 @@
-
+<div class="row" >
 <%= form_for(@enrollment) do |f| %>
 
   <% if @enrollment.errors.any? %>
@@ -12,12 +12,10 @@
       </ul>
     </div>
   <% end %>
-
+      <fieldset>
     <% if can? :do_as_student, :all %>
     <% #@course_ID = params[:course_id] %>
         <% #@user_ID = params[:user_id] %>
-        <% @user_a = "2" %>
-
         <div class="field">
           <%= f.label :Student_ID %><br>
           <%= f.number_field :Student_ID, :value => "1" %>
@@ -45,9 +43,7 @@
     <%= f.label :Course_ID %><br>
     <%= f.number_field :Course_ID %>
   </div>
-
-
-  <div class="field">
+ <div class="field">
     <%= f.label :Grade %><br>
     <%= f.text_field :Grade %>
   </div>
@@ -60,11 +56,11 @@
     <%= f.check_box :Admission %>
   </div>
 <% end %>
-
+        </fieldset>
   <div class="actions">
     <%= f.submit %>
   </div>
-
     <div class="filed">
     </div>
 <% end %>
+</div>

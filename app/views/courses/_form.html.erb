@@ -1,3 +1,4 @@
+  <div class="row" >
 <%= form_for(@course) do |f| %>
   <% if @course.errors.any? %>
     <div id="error_explanation">
@@ -10,7 +11,7 @@
       </ul>
     </div>
   <% end %>
-
+        <fieldset>
   <div class="field">
     <%= f.label :Course_num %><br>
     <%= f.number_field :Course_num %>
@@ -24,6 +25,8 @@
     <%= f.text_area :Description %>
     <!-- <%= f.text_area :Description, :value =>"something" %>-->
   </div>
+          </fieldset>
+        <fieldset>
   <div class="field">
     <%= f.label :Instructor %><br>
     <%= f.text_field :Instructor %>
@@ -37,9 +40,10 @@
     <%= f.date_select :End_date %>
   </div>
   <div class="field">
-    <%= f.label :Status %><br>
+    <%= f.label :Status %>
     <%= f.check_box :Status %>
   </div>
+          </fieldset>
   <div class="actions">
     <%= f.submit %>
   </div>
@@ -47,3 +51,4 @@
 
 
 <% end %>
+</div>

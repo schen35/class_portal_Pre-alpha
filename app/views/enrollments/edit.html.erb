@@ -3,6 +3,11 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @enrollment %> |
-<%= link_to 'Back', enrollments_path %>
+
+<%= link_to 'Show', @enrollment %>
+    <% if can? :do_as_student, :all %>
+ <%= link_to "Back", courses_path %>
+    <% else %>
+        <%= link_to 'Back', enrollments_path %>
+    <% end %>
 </div>
