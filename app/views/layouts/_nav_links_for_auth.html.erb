@@ -11,7 +11,15 @@
 <% if user_signed_in? %>
 
     <% if can? :do_as_admin, :all %>
+<<<<<<< HEAD
         <li><%#= link_to "Do as admin", admins_path %></li>
+=======
+<<<<<<< HEAD
+        <li><%#= link_to "Do as admin", admins_path %></li>
+=======
+        <li><%= link_to "Do as admin", superadmins_path %></li>
+>>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
+>>>>>>> master
     <% end %>
     <% if can? :do_as_instructor, :all %>
         <li><%= link_to "Do as instructor", courses_path %></li>
