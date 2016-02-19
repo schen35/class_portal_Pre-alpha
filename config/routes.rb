@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
 
-
-
-
 #  get 'superadmins/index'
 
  # get 'superadmins/show'
@@ -26,9 +23,6 @@ Rails.application.routes.draw do
 
 
   #root to: 'users#index'
-
-
-
   root to: 'visitors#index'
   devise_for :users, :path =>'u'
 
@@ -37,10 +31,10 @@ Rails.application.routes.draw do
 
 
   devise_scope :user do
-    get 'login', to: "devise/sessions#new", as: "login"
-    get 'logout', to: "devise/sessions#destroy", as: "logout"
-    get 'signout', to: "users/sessions#destroy", as: "signout"
-    get 'signup', to: "users#new", as: "signup"
+    get '/u/login', to: "devise/sessions#new", as: "login"
+    get '/u/logout', to: "devise/sessions#destroy", as: "logout"
+    get '/u/signout', to: "users/sessions#destroy", as: "signout"
+    get '/u/signup', to: "users#new", as: "signup"
     get '/u/sign_out' => 'devise/sessions#destroy'
   end
 
