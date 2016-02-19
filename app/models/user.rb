@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
   enum role: [:student, :instructor, :admin, :superadmin]
   after_initialize :set_default_role, :if => :new_record?
+  # setup model to filter out current user
+  # edit function would be else where implemented
+  scope :all_except, ->(user) { where.not(id: user) }
 
 
   def set_default_role

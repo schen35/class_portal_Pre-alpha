@@ -11,13 +11,13 @@ class Ability
     can :do_as_instructor, :all if user.role == 'instructor'
     can :do_as_student, :all if user.role =='student'
 
-    if user.role == 'admin'
-    cannot :destroy, User, id: user.id
-    else
-      can :destroy, User
-    end
+    # if user.role == 'admin'
+    # cannot :destroy, User, id: user.id
+    # else
+    #   can :destroy, User
+    # end
    case user.role
-     when "admin"
+     when 'admin'
        cannot :destroy, User do |x|
          x.id == user.id
        end
