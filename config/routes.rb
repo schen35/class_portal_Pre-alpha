@@ -40,7 +40,7 @@ Rails.application.routes.draw do
 
 
 
-   resources :courses
+
   # resources :courses do
   #   resources :enrollments
   # end
@@ -49,10 +49,7 @@ Rails.application.routes.draw do
   # end
    resources :users
    resources :enrollments
-
-    resources :courses do
-      resources :enrollments
-    end
+   resources :courses
   resources :admins
   resources :superadmins
 end
