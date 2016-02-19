@@ -2,11 +2,13 @@
   <div class="row col-md-4 col-md-offset-4" style="left: 0%; top: 70px;">
 <p id="notice"><%= notice %></p>
 
-<!--<h1>Listing Courses</h1>-->
-    <!--<%= form_tag(courses_path, :method => "get", id: "search-form") do %>-->
-        <!--<%= text_field_tag :search, params[:search], placeholder: "Search Course" %>-->
-        <!--<%= submit_tag "Search" %>-->
-    <!--<% end %>-->
+<h1>Listing Courses</h1>
+    <%= form_tag courses_path, :method => 'get' do %>
+        <p>
+        <%= text_field_tag :search, params[:search], placeholder: "Search Course" %>
+        <%= submit_tag "Search", :name => nil %>
+        </p>
+    <% end %>
 
     <table>
   <thead>
@@ -34,7 +36,7 @@
         <td><%= course.Status %></td>
         <% if can? :do_as_student, :all %>
             <% @course_id = course.id  %>
-            <td><%= button_to "Enroll", new_course_enrollment_path(@course_id),  form_class: "Enroll", method: "get"  %></td>
+            <td><%= button_to "Enroll", new_enrollment_path(@course_id),  form_class: "Enroll", method: "get"  %></td>
 
         <% end %>
         <td><%= link_to 'Show', course %></td>
