@@ -44,9 +44,18 @@ Rails.application.routes.draw do
     get '/u/sign_out' => 'devise/sessions#destroy'
   end
 
-  resources :enrollments
-  resources :courses
-  resources :users
+
+
+
+  # resources :courses do
+  #   resources :enrollments
+  # end
+  # resources :courses do
+  #   resources :users
+  # end
+   resources :users
+   resources :enrollments
+   resources :courses
   resources :admins
   resources :superadmins
 end

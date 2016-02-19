@@ -2,6 +2,7 @@ class EnrollmentsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_enrollment, only: [:show, :edit, :update, :destroy]
 
+
   # GET /enrollments
   # GET /enrollments.json
   def index
@@ -15,6 +16,10 @@ class EnrollmentsController < ApplicationController
 
   # GET /enrollments/new
   def new
+    # @course_id = Course.find(params[:user_id])
+    # @user_id = User.find(params[:course_id])
+    #@user_id = params[:id]
+    #@course_id = params[:course_id]
     @enrollment = Enrollment.new
   end
 
@@ -26,7 +31,6 @@ class EnrollmentsController < ApplicationController
   # POST /enrollments.json
   def create
     @enrollment = Enrollment.new(enrollment_params)
-
     respond_to do |format|
       if @enrollment.save
         format.html { redirect_to @enrollment, notice: 'Enrollment was successfully created.' }
@@ -41,6 +45,7 @@ class EnrollmentsController < ApplicationController
   # PATCH/PUT /enrollments/1
   # PATCH/PUT /enrollments/1.json
   def update
+    @enrollment = Enrollment.find(params[:id])
     respond_to do |format|
       if @enrollment.update(enrollment_params)
         format.html { redirect_to @enrollment, notice: 'Enrollment was successfully updated.' }

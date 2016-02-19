@@ -1,4 +1,6 @@
+<div class="row" >
 <%= form_for(@enrollment) do |f| %>
+
   <% if @enrollment.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@enrollment.errors.count, "error") %> prohibited this enrollment from being saved:</h2>
@@ -10,6 +12,24 @@
       </ul>
     </div>
   <% end %>
+      <fieldset>
+    <% if can? :do_as_student, :all %>
+    <% #@course_ID = params[:course_id] %>
+        <% #@user_ID = params[:user_id] %>
+        <div class="field">
+          <%= f.label :Student_ID %><br>
+          <%= f.number_field :Student_ID, :value => "1" %>
+        </div>
+        <div class="field">
+          <%= f.label :Instructor_ID %><br>
+          <%= f.number_field :Instructor_ID, :value => "2"
+          %>
+        </div>
+        <div class="field">
+          <%= f.label :Course_ID %><br>
+          <%= f.number_field :Course_ID, :value => "2" %>
+        </div>
+    <% else %>
 
   <div class="field">
     <%= f.label :Student_ID %><br>
@@ -23,7 +43,7 @@
     <%= f.label :Course_ID %><br>
     <%= f.number_field :Course_ID %>
   </div>
-  <div class="field">
+ <div class="field">
     <%= f.label :Grade %><br>
     <%= f.text_field :Grade %>
   </div>
@@ -35,10 +55,12 @@
     <%= f.label :Admission %><br>
     <%= f.check_box :Admission %>
   </div>
+<% end %>
+        </fieldset>
   <div class="actions">
     <%= f.submit %>
   </div>
-
     <div class="filed">
     </div>
 <% end %>
+</div>

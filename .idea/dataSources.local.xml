@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-<<<<<<< HEAD
-    <data-source name="Sqlite (Xerial) - development.sqlite3" uuid="f4d9be2d-0920-42d9-b6cc-333fc1155483">
+    <data-source name="PostgreSQL - postgres@localhost" uuid="4a2a70a0-b14f-4244-9ef4-992ebb511670">
       <secret-storage>master_key</secret-storage>
-      <auth-required>false</auth-required>
+      <schema-pattern>postgres.*</schema-pattern>
+      <default-schemas>postgres.*</default-schemas>
     </data-source>
-=======
-    <data-source name="Rails rails-devise: development" uuid="0f22b14e-21fd-48d9-b12c-e35090ed0668" />
->>>>>>> refs/remotes/origin/devarenacn
   </component>
 </project>
