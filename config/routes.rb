@@ -31,10 +31,10 @@ Rails.application.routes.draw do
 
 
   devise_scope :user do
-    get 'login', to: "devise/sessions#new", as: "login"
-    get 'logout', to: "devise/sessions#destroy", as: "logout"
-    get 'signout', to: "users/sessions#destroy", as: "signout"
-    get 'signup', to: "users#new", as: "signup"
+    get '/u/login', to: "devise/sessions#new", as: "login"
+    get '/u/logout', to: "devise/sessions#destroy", as: "logout"
+    get '/u/signout', to: "users/sessions#destroy", as: "signout"
+    get '/u/signup', to: "users#new", as: "signup"
     get '/u/sign_out' => 'devise/sessions#destroy'
   end
 
