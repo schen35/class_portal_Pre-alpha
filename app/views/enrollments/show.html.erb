@@ -31,6 +31,10 @@
   <%= @enrollment.Admission %>
 </p>
 
-<%= link_to 'Edit', edit_enrollment_path(@enrollment) %> |
-<%= link_to 'Back', enrollments_path %>
+  <%= link_to 'Edit', edit_enrollment_path(@enrollment) %>
+  <% if can? :do_as_student, :all %>
+      <%= link_to "Back", courses_path %>
+  <% else %>
+      <%= link_to 'Back', enrollments_path %>
+  <% end %>
 </div>

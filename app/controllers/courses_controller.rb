@@ -7,11 +7,8 @@ class CoursesController < ApplicationController
   # GET /courses.json
   def index
     @courses = Course.all
-    if params[:search]
-      @course = Course.search(params[:search]).order("created_at DESC")
-    else
-      @course = Course.all.order('created_at DESC')
-    end
+    @user_id = session[:user_id]
+    puts @user_id
   end
 
   # GET /courses/1
@@ -32,7 +29,6 @@ class CoursesController < ApplicationController
   # POST /courses.json
   def create
     @course = Course.new(course_params)
-
     respond_to do |format|
       if @course.save
         format.html { redirect_to @course, notice: 'Course was successfully created.' }
@@ -61,15 +57,28 @@ class CoursesController < ApplicationController
   # DELETE /courses/1
   # DELETE /courses/1.json
   def destroy
-    @course = Course.find(params[:id])
     @course.destroy
     respond_to do |format|
-      format.html { redirect_to courses_path, notice: 'Course was successfully destroyed.' }
+      format.html { redirect_to courses_url, notice: 'Course was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
+  def new_enrollment(user,course)
+    @get_instructor_id=ActiveRecord::Base.connection.execute('SELECT Instructor_ID FROM Course WHERE course.id = course_i.id')
 
+    ActiveRecord::Base.connection.execute("INSERT INTO enrollments (Student_ID, Course_ID, Instructor_ID) VALUES (#{user.id}, #{course.id}, #{@get_instructor_id}) ")
+
+
+
+   # @users = User.all
+   # @users.each do |find_user|
+   #   relevant_courses = Courses.find(:all, :conditions => ["? = courses.Instructor",find_user.name ])
+    #  relevant_courses.each do |find_instructor|
+    #    users.enrollments << Enrollments.create(:Course_ID => course.id, :Student_ID => user.id, :Instructor_ID => find_instructor.id)
+     # end
+   # end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
