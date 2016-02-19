@@ -10,7 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'autoprefixer-rails'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'cancancan'
-gem 'rails_12factor', group: :production
+
 
 group :development, :test do
   gem 'byebug'
@@ -26,4 +26,8 @@ group :development do
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'rails_layout'
+end
+group :production do
+  gem 'rails_12factor'
+  gem 'thin'
 end
