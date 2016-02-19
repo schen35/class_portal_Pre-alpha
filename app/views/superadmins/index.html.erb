@@ -15,17 +15,15 @@
       </thead>
 
       <tbody>
-      <% @users.each do |user| %>
-          <% if can? :destroy, user %>
-          <% end %>
+          <% @available_users = @users.find_by_sql('SELECT * FROM users WHERE role=0 OR role=1 OR role=2')%>
+          <% @users.each do |user| %>
           <tr>
             <td><%= user.email %></td>
             <td><%= user.name %></td>
             <td><%= user.role %></td>
 
-            <!--<td><%= link_to 'Edit', edit_user_path(user) %></td>-->
+            <td><%= link_to 'Delete', user , method: :delete %></td>
 
-            <td><%= button_to 'Delete', user, :method => :delete, :class=>:destroy, data: { confirm: 'Are you sure?' } if can? :destroy, user %><</td>
           </tr>
       <% end %>
       </tbody>
