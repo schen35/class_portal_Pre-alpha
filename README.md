@@ -1,7 +1,8 @@
 Class Portal
 ================
 
-This application is a course project for CSC 517 2016 Spring
+This application is a course project for CSC 517 2016 Spring.
+Database for this project is using PostgreSQL, if you want to run the project locally, please install in before hand. Installation guide can be found here: https://wiki.postgresql.org/wiki/Detailed_installation_guides
 
 -----------
 For testing there're built in accounts that you can use.
@@ -39,7 +40,7 @@ SuperAdmin
 Unrosolved issues:
   1. Enrollment function is not ideal, but it's functional. I know it's a pain in the a$$, but it's the best we can do now. Sorry
   2. There might be some problems with authorizations, such as current admin could delete himself. Working on it.
-  
+  3. If something weird is going on, don't be afraid, please let us know so it won't suprise you AGAIN.
 
 -----------
 
