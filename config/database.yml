@@ -7,7 +7,10 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> master
+>>>>>>> origin/devarenacn
 development:
   adapter: postgresql
   database: my_database_development
@@ -26,6 +29,8 @@ production:
   timeout: 5000
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 =======
 #default: &default
 #  adapter: postgresql
@@ -37,10 +42,13 @@ production:
 #  database: db/development.sqlite3
 >>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
 >>>>>>> master
+>>>>>>> origin/devarenacn
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -54,3 +62,4 @@ production:
 #  database: db/production.sqlite3
 >>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
 >>>>>>> master
+>>>>>>> origin/devarenacn

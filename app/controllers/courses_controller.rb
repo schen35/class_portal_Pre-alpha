@@ -6,9 +6,13 @@ class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.json
   def index
+<<<<<<< HEAD
+    @courses = Course.search(params[:search])
+=======
     @courses = Course.all
     @user_id = session[:user_id]
     puts @user_id
+>>>>>>> origin/devarenacn
   end
 
   # GET /courses/1
@@ -57,9 +61,10 @@ class CoursesController < ApplicationController
   # DELETE /courses/1
   # DELETE /courses/1.json
   def destroy
+    @course = Course.find(params[:id])
     @course.destroy
     respond_to do |format|
-      format.html { redirect_to courses_url, notice: 'Course was successfully destroyed.' }
+      format.html { redirect_to courses_path, notice: 'Course was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -70,6 +75,8 @@ class CoursesController < ApplicationController
     ActiveRecord::Base.connection.execute("INSERT INTO enrollments (Student_ID, Course_ID, Instructor_ID) VALUES (#{user.id}, #{course.id}, #{@get_instructor_id}) ")
 
 
+<<<<<<< HEAD
+=======
 
    # @users = User.all
    # @users.each do |find_user|
@@ -80,6 +87,7 @@ class CoursesController < ApplicationController
    # end
   end
 
+>>>>>>> origin/devarenacn
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_course

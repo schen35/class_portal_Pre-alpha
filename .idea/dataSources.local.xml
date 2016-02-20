@@ -2,6 +2,10 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
 <<<<<<< HEAD
+    <data-source name="Rails rails-devise: development" uuid="0f22b14e-21fd-48d9-b12c-e35090ed0668" />
+    <data-source name="Sqlite (Xerial) - development.sqlite3" uuid="cf578299-a1aa-4f21-9291-38000bdd4148" />
+=======
+<<<<<<< HEAD
     <data-source name="PostgreSQL - postgres@localhost" uuid="4a2a70a0-b14f-4244-9ef4-992ebb511670" />
 =======
 <<<<<<< HEAD
@@ -14,5 +18,6 @@
     <data-source name="Rails rails-devise: development" uuid="0f22b14e-21fd-48d9-b12c-e35090ed0668" />
 >>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
 >>>>>>> master
+>>>>>>> origin/devarenacn
   </component>
 </project>
