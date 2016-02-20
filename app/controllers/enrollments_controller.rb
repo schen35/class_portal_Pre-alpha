@@ -14,12 +14,22 @@ class EnrollmentsController < ApplicationController
   def show
   end
 
+  def index_instructor
+    @enrollments = Enrollment.all
+  end
+
+  def index_student
+    @enrollments = Enrollment.all
+  end
+
   # GET /enrollments/new
   def new
     # @course_id = Course.find(params[:user_id])
     # @user_id = User.find(params[:course_id])
     #@user_id = params[:id]
     #@course_id = params[:course_id]
+#    @course_id_prama = @course_id
+    @course_id_prama = params[:course_prama]
     @enrollment = Enrollment.new
   end
 
@@ -31,6 +41,7 @@ class EnrollmentsController < ApplicationController
   # POST /enrollments.json
   def create
     @enrollment = Enrollment.new(enrollment_params)
+    @course_id = params[:course_id_param]
     respond_to do |format|
       if @enrollment.save
         format.html { redirect_to @enrollment, notice: 'Enrollment was successfully created.' }

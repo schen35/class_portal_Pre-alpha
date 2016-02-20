@@ -1,4 +1,4 @@
-<div class="row" >
+<div class="container row col-lg-12 col-md-12 col-sm-12" >
 <%= form_for(@enrollment) do |f| %>
 
   <% if @enrollment.errors.any? %>
@@ -27,7 +27,7 @@
         </div>
         <div class="field">
           <%= f.label :Course_ID %><br>
-          <%= f.number_field :Course_ID, :value => "2" %>
+          <%= f.number_field :Course_ID, :value => @course_id_prama.id %>
         </div>
     <% else %>
 
