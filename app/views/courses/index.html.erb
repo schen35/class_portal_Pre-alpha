@@ -29,14 +29,13 @@
         <td><%= course.End_date %></td>
         <td><%= course.Status %></td>
         <% if can? :do_as_student, :all %>
-            <% @course_id = course  %>
-            <td><%= button_to "Enroll", student_enrollment_path(course_param: 'course_id'),  form_class: "Enroll", method: "get"  %></td>
+            <td><%= link_to 'Check Detail', course %></td>
         <% end %>
         <% if can? :do_as_instructor, :all %>
             <% @course_id = course  %>
             <td><%= button_to "Manage Enroll", edit_enrollment_path(@course_id),  form_class: "Enroll", method: "get"  %></td>
+            <td><%= link_to 'Show', course %></td>
         <% end %>
-        <td><%= link_to 'Show', course %></td>
         <% if can? :do_as_instructor, :all %>
         <td><%= link_to 'Edit', edit_course_path(course) %></td>
         <% end %>

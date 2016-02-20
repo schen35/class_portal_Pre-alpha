@@ -1,7 +1,7 @@
 class EnrollmentsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_enrollment, only: [:show, :edit, :update, :destroy]
-
+  before_action :auto_fill,
 
   # GET /enrollments
   # GET /enrollments.json
@@ -15,23 +15,36 @@ class EnrollmentsController < ApplicationController
   end
 
   def index_instructor
+    @user_id = current_user
     @enrollments = Enrollment.all
   end
 
   def index_student
+    @user_id = current_user
     @enrollments = Enrollment.all
   end
 
   # GET /enrollments/new
   def new
-    # @course_id = Course.find(params[:user_id])
-    # @user_id = User.find(params[:course_id])
-    #@user_id = params[:id]
-    #@course_id = params[:course_id]
-#    @course_id_prama = @course_id
-    @course_id_prama = params[:course_prama]
+    if can? :do_as_student, :all
+    @courses= Course.all
+    @users = User.all
+    @course_id = session[:current_course]
+    @course_find = @courses.where('"courses"."id" = ?', "#{@course_id}")
+    @course_find.each do |course|
+      @instructor_name = course.Instructor
+      @user_find = @users.where('"users"."name" = ?', "#{@instructor_name}")
+      @user_find.each do |user|
+        @instructor_id = user.id
+        session[:current_course_instructor_id]= @instructor_id
+      end
+    end
+    @user_id = current_user
+    @instructor_id = session[:current_course_instructor_id]
+    end
     @enrollment = Enrollment.new
   end
+
 
   # GET /enrollments/1/edit
   def edit
@@ -86,6 +99,6 @@ class EnrollmentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def enrollment_params
-      params.require(:enrollment).permit(:Student_ID, :Instructor_ID, :Course_ID, :Grade, :Material, :Admission)
+      params.require(:enrollment).permit(:student_id, :instructor_id, :course_id, :grade, :material, :admission)
     end
 end

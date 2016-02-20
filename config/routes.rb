@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'index_instructor' => 'enrollments#index_instructor'
    get 'index_student' => 'enrollments#index_student'
 
-  get '/enrollments/:id', to: 'enrollments#new', as: 'student_enrollment'
+  get '/enrollments', to: 'enrollments#new', as: 'student_enrollment'
 
 
   devise_scope :user do

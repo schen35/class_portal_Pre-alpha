@@ -14,6 +14,7 @@ class CoursesController < ApplicationController
   # GET /courses/1
   # GET /courses/1.json
   def show
+
   end
 
   # GET /courses/new
@@ -31,6 +32,7 @@ class CoursesController < ApplicationController
     @course = Course.new(course_params)
     respond_to do |format|
       if @course.save
+
         format.html { redirect_to @course, notice: 'Course was successfully created.' }
         format.json { render :show, status: :created, location: @course }
       else
@@ -66,9 +68,9 @@ class CoursesController < ApplicationController
   end
 
   def new_enrollment(user,course)
-    @get_instructor_id=ActiveRecord::Base.connection.execute('SELECT Instructor_ID FROM Course WHERE course.id = course_i.id')
+    @get_instructor_id=ActiveRecord::Base.connection.execute('SELECT instructor_id FROM Course WHERE course.id = course_i.id')
 
-    ActiveRecord::Base.connection.execute("INSERT INTO enrollments (Student_ID, Course_ID, Instructor_ID) VALUES (#{user.id}, #{course.id}, #{@get_instructor_id}) ")
+    ActiveRecord::Base.connection.execute("INSERT INTO enrollments (student_id, course_id, instructor_id) VALUES (#{user.id}, #{course.id}, #{@get_instructor_id}) ")
 
 
 
@@ -76,7 +78,7 @@ class CoursesController < ApplicationController
    # @users.each do |find_user|
    #   relevant_courses = Courses.find(:all, :conditions => ["? = courses.Instructor",find_user.name ])
     #  relevant_courses.each do |find_instructor|
-    #    users.enrollments << Enrollments.create(:Course_ID => course.id, :Student_ID => user.id, :Instructor_ID => find_instructor.id)
+    #    users.enrollments << Enrollments.create(:course_id => course.id, :student_id => user.id, :instructor_id => find_instructor.id)
      # end
    # end
   end

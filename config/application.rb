@@ -27,8 +27,8 @@ module RailsDevise
 end
 module Register
   class Application < Rails::Application
-    config.course_ID = -1
-    config.student_ID = -1
-    config.instructor_ID = -1
+    config.course_id = -1
+    config.student_id = -1
+    config.instructor_id = -1
   end
 end
