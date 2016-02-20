@@ -1,4 +1,8 @@
 class SuperadminsController < UsersController
+<<<<<<< HEAD
+=======
+  before_action :authenticate_user!
+>>>>>>> refs/remotes/origin/schen35
   def destroy
     @user = User.find(params[:id])
     @user.destroy

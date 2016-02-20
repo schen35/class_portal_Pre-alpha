@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="DataSourceManagerImpl" format="xml" hash="4287199383">
 =======
 <<<<<<< HEAD
@@ -9,10 +10,15 @@
 >>>>>>> master
   <component name="DataSourceManagerImpl" format="xml" hash="1917085544">
     <data-source source="LOCAL" name="PostgreSQL - postgres@localhost" uuid="4a2a70a0-b14f-4244-9ef4-992ebb511670">
+=======
+  <component name="DataSourceManagerImpl" format="xml" hash="3082739764">
+    <data-source source="LOCAL" name="PostgreSQL - postgres@localhost" uuid="2122bd42-5261-4558-889d-954595b7327f">
+>>>>>>> refs/remotes/origin/schen35
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -36,6 +42,8 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/config/development.sqlite3</jdbc-url>
+=======
+>>>>>>> refs/remotes/origin/schen35
     </data-source>
   </component>
 </project>

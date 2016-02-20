@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
 
-  has_many :enrollments
+  has_and_belongs_to_many :enrollments, association_foreign_key: :user_id
   has_many :courses, through: :enrollments
 
   validates_presence_of :email, :password

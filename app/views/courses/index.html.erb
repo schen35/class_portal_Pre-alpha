@@ -39,18 +39,25 @@
         <td><%= course.End_date %></td>
         <td><%= course.Status %></td>
         <% if can? :do_as_student, :all %>
+<<<<<<< HEAD
             <% @course_id = course.id  %>
             <td><%= button_to "Enroll", new_enrollment_path(@course_id),  form_class: "Enroll", method: "get"  %></td>
 <<<<<<< HEAD
 
 =======
+=======
+            <td><%= link_to 'Check Detail', course %></td>
+>>>>>>> refs/remotes/origin/schen35
         <% end %>
         <% if can? :do_as_instructor, :all %>
-            <% @course_id = course.id  %>
+            <% @course_id = course  %>
             <td><%= button_to "Manage Enroll", edit_enrollment_path(@course_id),  form_class: "Enroll", method: "get"  %></td>
+<<<<<<< HEAD
 >>>>>>> origin/devarenacn
+=======
+            <td><%= link_to 'Show', course %></td>
+>>>>>>> refs/remotes/origin/schen35
         <% end %>
-        <td><%= link_to 'Show', course %></td>
         <% if can? :do_as_instructor, :all %>
         <td><%= link_to 'Edit', edit_course_path(course) %></td>
 <<<<<<< HEAD

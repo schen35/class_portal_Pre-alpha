@@ -1,1 +1,1 @@
-json.extract! @enrollment, :id, :Student_ID, :Instructor_ID, :Course_ID, :Grade, :Material, :Admission, :created_at, :updated_at
+json.extract! @enrollment, :id, :student_id, :instructor_id, :course_id, :grade, :material, :admission, :created_at, :updated_at

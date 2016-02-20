@@ -1,4 +1,4 @@
 json.array!(@enrollments) do |enrollment|
-  json.extract! enrollment, :id, :Student_ID, :Instructor_ID, :Course_ID, :Grade, :Material, :Admission
+  json.extract! enrollment, :id, :student_id, :instructor_id, :course_id, :grade, :material, :admission
   json.url enrollment_url(enrollment, format: :json)
 end

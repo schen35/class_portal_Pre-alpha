@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20160217175957) do
     t.string   "Title"
     t.text     "Description"
     t.string   "Instructor"
-    t.integer  "Instructor_ID"
+    t.integer  "Instructor_id"
     t.date     "Start_date"
     t.date     "End_date"
     t.boolean  "Status"
@@ -32,19 +32,19 @@ ActiveRecord::Schema.define(version: 20160217175957) do
   add_index "courses", ["Course_num"], name: "index_courses_on_Course_num", unique: true, using: :btree
 
   create_table "enrollments", force: :cascade do |t|
-    t.integer  "Student_ID"
-    t.integer  "Instructor_ID"
-    t.integer  "Course_ID"
-    t.float    "Grade"
-    t.text     "Material"
-    t.boolean  "Admission"
+    t.integer  "student_id"
+    t.integer  "instructor_id"
+    t.integer  "course_id"
+    t.float    "grade"
+    t.text     "material"
+    t.boolean  "admission"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
 
-  add_index "enrollments", ["Course_ID"], name: "index_enrollments_on_Course_ID", using: :btree
-  add_index "enrollments", ["Instructor_ID"], name: "index_enrollments_on_Instructor_ID", using: :btree
-  add_index "enrollments", ["Student_ID"], name: "index_enrollments_on_Student_ID", using: :btree
+  add_index "enrollments", ["course_id"], name: "index_enrollments_on_course_id", using: :btree
+  add_index "enrollments", ["instructor_id"], name: "index_enrollments_on_instructor_id", using: :btree
+  add_index "enrollments", ["student_id"], name: "index_enrollments_on_student_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

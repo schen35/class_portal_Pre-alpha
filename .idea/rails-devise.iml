@@ -13,6 +13,7 @@
     <configuration default="false" name="Development: rails-devise" type="RailsRunConfigurationType" factoryName="Rails">
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
       <module name="rails-devise" />
@@ -24,6 +25,8 @@
       <envs />
 =======
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/schen35
       <module name="rails-devise" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -106,9 +109,12 @@
         <env name="RAILS_ENV" value="test" />
       </envs>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/schen35
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
@@ -116,6 +122,7 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -128,6 +135,8 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
 =======
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/schen35
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
@@ -135,9 +144,12 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/schen35
       <method />
     </configuration>
     <configuration default="false" name="Rails console: rails-devise" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
@@ -161,6 +173,7 @@
       <method />
     </configuration>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -168,8 +181,9 @@
     <configuration default="false" name="spec: rails-devise" type="RakeRunConfigurationType" factoryName="Rake">
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/schen35
     <configuration default="false" name="assets:precompile: rails-devise" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
->>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
       <module name="rails-devise" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -184,49 +198,21 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-<<<<<<< HEAD
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test: rails-devise" type="RakeRunConfigurationType" factoryName="Rake">
-      <module name="rails-devise" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
-=======
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="assets:precompile" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
->>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <method />
     </configuration>
+<<<<<<< HEAD
 =======
 >>>>>>> master
 >>>>>>> master
 >>>>>>> origin/devarenacn
+=======
+>>>>>>> refs/remotes/origin/schen35
     <configuration default="false" name="db:create: rails-devise" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="rails-devise" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -253,6 +239,7 @@
       <method />
     </configuration>
     <configuration default="false" name="db:migrate: rails-devise" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+<<<<<<< HEAD
       <module name="rails-devise" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -290,6 +277,8 @@
 >>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
 >>>>>>> master
 >>>>>>> origin/devarenacn
+=======
+>>>>>>> refs/remotes/origin/schen35
       <module name="rails-devise" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -313,7 +302,11 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="false" name="db:drop: rails-devise" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+=======
+    <configuration default="false" name="db:seed: rails-devise" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+>>>>>>> refs/remotes/origin/schen35
       <module name="rails-devise" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -325,6 +318,7 @@
       </envs>
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -334,11 +328,14 @@
 =======
 >>>>>>> master
 >>>>>>> origin/devarenacn
+=======
+>>>>>>> refs/remotes/origin/schen35
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
         <COVERAGE_PATTERN ENABLED="true">
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:drop" />
 =======
@@ -349,6 +346,9 @@
 >>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
 >>>>>>> master
 >>>>>>> origin/devarenacn
+=======
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:seed" />
+>>>>>>> refs/remotes/origin/schen35
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
@@ -370,9 +370,12 @@
     <orderEntry type="jdk" jdkName="ruby-2.2.3-p173" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/schen35
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v4.2.5.1, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v4.2.5.1, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v4.2.5.1, ruby-2.2.3-p173) [gem]" level="application" />
@@ -445,6 +448,7 @@
     <orderEntry type="library" scope="PROVIDED" name="warden (v1.2.6, ruby-2.2.3-p173) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v2.3.0, ruby-2.2.3-p173) [gem]" level="application" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v4.2.5.1, RVM: ruby-2.2.1 [global]) [gem]" level="application" />
@@ -516,6 +520,8 @@
     <orderEntry type="library" scope="PROVIDED" name="web-console (v2.3.0, RVM: ruby-2.2.1 [global]) [gem]" level="application" />
 >>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
 >>>>>>> master
+=======
+>>>>>>> refs/remotes/origin/schen35
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
