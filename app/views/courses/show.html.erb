@@ -38,9 +38,9 @@
 </p>
     <% if ((can? :do_as_admin, :all) || (can? :do_as_superadmin, :all))%>
 <%= link_to 'Edit', edit_course_path(@course) %> |
-        <% else %>
+    <% end %>
 <%= link_to 'Back', courses_path %>
-        <% end %>
+
     <% if can? :do_as_student, :all %>
         <% session[:current_course]= @course.id %>
         |  <%= link_to 'Enroll', student_enrollment_path %>

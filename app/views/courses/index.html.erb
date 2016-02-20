@@ -1,5 +1,4 @@
-<div class="container">
-  <div class="row col-lg-12 col-md-12 col-sm-12 " style="left: 0%; top: 70px;">
+  <div class="container row col-lg-12 col-md-12 col-sm-12 " style="left: 0%; top: 70px;">
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Courses</h1>
@@ -9,12 +8,20 @@
         <%= submit_tag "Search", :name => nil %>
         </p>
     <% end %>
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/schen35
 
 <<<<<<< HEAD
     <table>
 =======
 <table border="4">
+<<<<<<< HEAD
 >>>>>>> origin/devarenacn
+=======
+
+>>>>>>> refs/remotes/origin/schen35
   <thead>
     <tr>
       <th>Course num</th>
@@ -50,14 +57,19 @@
 >>>>>>> refs/remotes/origin/schen35
         <% end %>
         <% if can? :do_as_instructor, :all %>
+<<<<<<< HEAD
             <% @course_id = course  %>
             <td><%= button_to "Manage Enroll", edit_enrollment_path(@course_id),  form_class: "Enroll", method: "get"  %></td>
 <<<<<<< HEAD
 >>>>>>> origin/devarenacn
 =======
+=======
+            <% @course_id = course.id  %>
+>>>>>>> refs/remotes/origin/schen35
             <td><%= link_to 'Show', course %></td>
 >>>>>>> refs/remotes/origin/schen35
         <% end %>
+<<<<<<< HEAD
         <% if can? :do_as_instructor, :all %>
         <td><%= link_to 'Edit', edit_course_path(course) %></td>
 <<<<<<< HEAD
@@ -69,6 +81,17 @@
         <% end %>
             </tr>
 <<<<<<< HEAD
+=======
+
+        <% if ((can? :do_as_instructor, :all)||(can? :do_as_admin, :all) )%>
+
+        <% end %>
+        <% if can? :do_as_admin, :all %>
+            <td><%= link_to 'Edit', edit_course_path(course) %></td>
+            <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+      </tr>
+>>>>>>> refs/remotes/origin/schen35
 
 =======
 =======
@@ -84,12 +107,15 @@
 >>>>>>> master
 >>>>>>> origin/master
     <% end %>
+
+
   </tbody>
 </table>
 
 <br>
     <% if can? :do_as_admin, :all %>
-<%= link_to 'New Course', new_course_path %>
+    <%= link_to 'New Course', new_course_path %>
     <% end %>
-    </div>
+
+
   </div>

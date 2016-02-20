@@ -3,6 +3,7 @@
   <component name="dataSourceStorageLocal">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <data-source name="Rails rails-devise: development" uuid="0f22b14e-21fd-48d9-b12c-e35090ed0668" />
     <data-source name="Sqlite (Xerial) - development.sqlite3" uuid="cf578299-a1aa-4f21-9291-38000bdd4148" />
 =======
@@ -26,6 +27,9 @@
 >>>>>>> master
 >>>>>>> origin/devarenacn
 =======
+>>>>>>> refs/remotes/origin/schen35
+=======
+    <data-source name="PostgreSQL - postgres@localhost" uuid="2122bd42-5261-4558-889d-954595b7327f" />
 >>>>>>> refs/remotes/origin/schen35
   </component>
 </project>

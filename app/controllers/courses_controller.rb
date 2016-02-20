@@ -7,18 +7,25 @@ class CoursesController < ApplicationController
   # GET /courses.json
   def index
 <<<<<<< HEAD
+<<<<<<< HEAD
     @courses = Course.search(params[:search])
 =======
     @courses = Course.all
     @user_id = session[:user_id]
     puts @user_id
 >>>>>>> origin/devarenacn
+=======
+
+    @courses = Course.search(params[:search])
+    @user_id = session[:user_id]
+    puts @user_id
+
+>>>>>>> refs/remotes/origin/schen35
   end
 
   # GET /courses/1
   # GET /courses/1.json
   def show
-
   end
 
   # GET /courses/new
@@ -36,7 +43,6 @@ class CoursesController < ApplicationController
     @course = Course.new(course_params)
     respond_to do |format|
       if @course.save
-
         format.html { redirect_to @course, notice: 'Course was successfully created.' }
         format.json { render :show, status: :created, location: @course }
       else
@@ -71,9 +77,8 @@ class CoursesController < ApplicationController
     end
   end
 
-  def new_enrollment(user,course)
-    @get_instructor_id=ActiveRecord::Base.connection.execute('SELECT instructor_id FROM Course WHERE course.id = course_i.id')
 
+<<<<<<< HEAD
     ActiveRecord::Base.connection.execute("INSERT INTO enrollments (student_id, course_id, instructor_id) VALUES (#{user.id}, #{course.id}, #{@get_instructor_id}) ")
 
 
@@ -88,6 +93,8 @@ class CoursesController < ApplicationController
      # end
    # end
   end
+=======
+>>>>>>> refs/remotes/origin/schen35
 
 >>>>>>> origin/devarenacn
   private

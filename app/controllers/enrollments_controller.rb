@@ -1,7 +1,7 @@
 class EnrollmentsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_enrollment, only: [:show, :edit, :update, :destroy]
-  before_action :auto_fill,
+
 
   # GET /enrollments
   # GET /enrollments.json
