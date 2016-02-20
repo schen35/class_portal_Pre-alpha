@@ -7,7 +7,6 @@ class CoursesController < ApplicationController
   # GET /courses.json
   def index
     @courses = Course.search(params[:search])
-
   end
 
   # GET /courses/1
@@ -64,21 +63,6 @@ class CoursesController < ApplicationController
     end
   end
 
-  def new_enrollment(user,course)
-    @get_instructor_id=ActiveRecord::Base.connection.execute('SELECT Instructor_ID FROM Course WHERE course.id = course_i.id')
-
-    ActiveRecord::Base.connection.execute("INSERT INTO enrollments (Student_ID, Course_ID, Instructor_ID) VALUES (#{user.id}, #{course.id}, #{@get_instructor_id}) ")
-
-
-
-   # @users = User.all
-   # @users.each do |find_user|
-   #   relevant_courses = Courses.find(:all, :conditions => ["? = courses.Instructor",find_user.name ])
-    #  relevant_courses.each do |find_instructor|
-    #    users.enrollments << Enrollments.create(:Course_ID => course.id, :Student_ID => user.id, :Instructor_ID => find_instructor.id)
-     # end
-   # end
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
