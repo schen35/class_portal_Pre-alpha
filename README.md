@@ -1,22 +1,40 @@
-Rails Devise
+Class Portal
 ================
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+This application is a course project for CSC 517 2016 Spring
+For testing there're built in accounts that you can use.
 
-Rails Composer is supported by developers who purchase our RailsApps tutorials.
+Student
+    login email:        password:
+  test_2@email.com      12345678
+  test_1@email.com      12345678
 
-Problems? Issues?
+Instructor
+    login email:         password:
+  test_i1@email.com      12345678
+  test_i2@email.com      12345678
+  
+Admin
+    login email:         password:
+  test_a1@email.com      12345678
+  test_a2@email.com      12345678
+  
+SuperAdmin
+    login email:         password:
+  test_s1@email.com      12345678
+
 -----------
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
+Unrosolved issues:
+  1. Enrollment function is not ideal, but it's functional. I know it's a pain in the a$$, but it's the best we can do now. Sorry
+  2. There might be some problems with authorizations, such as current admin could delete himself. Working on it.
+  
 
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
+-----------
 
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
+Need help? Send an email to ychen71@ncsu.edu 
 
-Ruby on Rails
+
 -------------
 
 This application requires:
@@ -26,23 +44,3 @@ This application requires:
 
 Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
 
-Getting Started
----------------
-
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
-----------------
-
-Contributing
-------------
-
-Credits
--------
-
-License
--------
