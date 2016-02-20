@@ -2,26 +2,37 @@ Class Portal
 ================
 
 This application is a course project for CSC 517 2016 Spring
+
+-----------
 For testing there're built in accounts that you can use.
 
 Student
-    login email:        password:
-  test_2@email.com      12345678
-  test_1@email.com      12345678
+
+|    login email    |    password   |
+| -------------     | ------------- |
+| test_1@email.com  |    12345678   |
+| test_2@email.com  |    12345678   |
+
 
 Instructor
-    login email:         password:
-  test_i1@email.com      12345678
-  test_i2@email.com      12345678
+
+|    login email     |    password   |
+| -------------      | ------------- |
+| test_i1@email.com  |    12345678   |
+| test_i2@email.com  |    12345678   |
   
 Admin
-    login email:         password:
-  test_a1@email.com      12345678
-  test_a2@email.com      12345678
+
+|    login email     |    password   |
+| -------------      | ------------- |
+| test_a1@email.com  |    12345678   |
+| test_a2@email.com  |    12345678   |
   
 SuperAdmin
-    login email:         password:
-  test_s1@email.com      12345678
+
+|    login email     |    password   |
+| -------------      | ------------- |
+| test_s1@email.com  |    12345678   |
 
 -----------
 
