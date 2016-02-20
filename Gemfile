@@ -25,10 +25,34 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
 end
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
+>>>>>>> master
+>>>>>>> origin/devarenacn
 group :production do
   gem 'rails_12factor'
   gem 'thin'
 end
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+
+
+=======
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 72fbd739d54b7853f8eb1948ea710fea944e13bb
+>>>>>>> master
+>>>>>>> origin/devarenacn

@@ -2,6 +2,7 @@ class EnrollmentsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_enrollment, only: [:show, :edit, :update, :destroy]
 
+
   # GET /enrollments
   # GET /enrollments.json
   def index
@@ -15,6 +16,10 @@ class EnrollmentsController < ApplicationController
 
   # GET /enrollments/new
   def new
+    # @course_id = Course.find(params[:user_id])
+    # @user_id = User.find(params[:course_id])
+    #@user_id = params[:id]
+    #@course_id = params[:course_id]
     @enrollment = Enrollment.new
   end
 
