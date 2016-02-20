@@ -14,15 +14,15 @@
 
         <li><%#= link_to "Do as admin", admins_path %></li>
 
-        <li><%= link_to "Do as admin", superadmins_path %></li>
+        <li><%= link_to "Manage admins & users", superadmins_path %></li>
 
     <% end %>
     <% if can? :do_as_instructor, :all %>
-        <li><%= link_to "Do as instructor", courses_path %></li>
+        <li><%= link_to "List course", courses_path %></li>
         <li><%= link_to "Check Enrollment", index_instructor_path %></li>
     <% end %>
     <% if can? :do_as_student, :all %>
-        <li><%= link_to "Search course?", courses_path %></li>
+        <li><%= link_to "Search course", courses_path %></li>
         <li><%= link_to "Check Enrollment", index_student_path %></li>
     <% end %>
     <% if can? :do_as_superadmin, :all %>
